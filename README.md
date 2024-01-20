@@ -1,1 +1,1 @@
-# My Typescript Project ENV
+# Typescript Project Boilerplate

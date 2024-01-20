@@ -10,14 +10,23 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "paths": {
+      "@app/*": ["./src/*"],
+      "@module/*": ["./src/module/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@schema/*": ["./src/schema/*"],
+      "@types/*": ["./src/types/*"],
+    },
     "incremental": true,
     "skipLibCheck": true,
-    "strictNullChecks": false,
+    "strict": true,
+    "strictNullChecks": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "noUnusedLocals": true,
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
