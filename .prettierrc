@@ -5,15 +5,8 @@
   "singleQuote": true,
   "bracketSpacing": true,
   "plugins": ["@trivago/prettier-plugin-sort-imports"],
-  "importOrder": [
-    "<THIRD_PARTY_MODULES>",
-    "^@app/(.*)$",
-    "^@modules/(.*)$",
-    "^@utils/(.*)$",
-    "^@schema/(.*)$",
-    "^@types/(.*)$",
-    "^[./]"
-  ],
+  "importOrder": ["<THIRD_PARTY_MODULES>", "^@src/(.*)$", "^[./]"],
   "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
+  "importOrderSortSpecifiers": true,
+  "importOrderParserPlugins": ["typescript", "decorators-legacy"]
 }

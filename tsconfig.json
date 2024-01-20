@@ -11,11 +11,7 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["./src/*"],
-      "@module/*": ["./src/module/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@schema/*": ["./src/schema/*"],
-      "@types/*": ["./src/types/*"],
+      "@src/*": ["./src/*"],
     },
     "incremental": true,
     "skipLibCheck": true,

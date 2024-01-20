@@ -1,9 +1,11 @@
-import { IappController } from '@app/types'
 import { injectable } from 'tsyringe'
 
+import { appService } from '@src/module/app/app.service'
+
 @injectable()
-export class AppController implements IappController {
-  constructor() {}
-  set() {}
-  run() {}
+export class AppController {
+  constructor(private readonly appService: appService) {}
+  run() {
+    return this.appService.hello()
+  }
 }
