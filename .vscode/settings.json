@@ -6,7 +6,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.tslint": "explicit",
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "eslint.options": {

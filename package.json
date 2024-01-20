@@ -7,7 +7,7 @@
     "build": "npx tsc -p . && tsc-alias",
     "start:dev": "node ./dist/main.js",
     "start:prod": "node ./dist/main.js",
-    "dev": "nodemon --watch src --exec 'npx' 'ts-node' -r tsconfig-paths/register ./src/main.ts --dev",
+    "dev": "NODE_ENV=development nodemon --watch src --exec 'npx' 'ts-node' -r tsconfig-paths/register ./src/main.ts --dev",
     "clear": "rm -rf ./node_modules ./dist ./package-lock.json"
   },
   "keywords": [],
