@@ -5,7 +5,8 @@
   "main": "./dist/main.js",
   "scripts": {
     "build": "npx tsc -p . && tsc-alias",
-    "start": "npm run build && tsc-alias && node ./dist/main.js",
+    "start:dev": "node ./dist/main.js",
+    "start:prod": "node ./dist/main.js",
     "dev": "nodemon --watch src --exec 'npx' 'ts-node' -r tsconfig-paths/register ./src/main.ts --dev",
     "clear": "rm -rf ./node_modules ./dist ./package-lock.json"
   },
@@ -46,6 +47,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "dotenv": "^16.3.2",
     "reflect-metadata": "^0.2.1",
     "tsyringe": "^4.8.0"
   }
