@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 
 if (process.env.NODE_ENV === 'development') {
-  dotenv.config()
+  dotenv.config({ path: process.env.PWD + '/.env.development.local' })
 }
 
 const config = {
