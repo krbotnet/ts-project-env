@@ -1,11 +1,16 @@
 import dotenv from 'dotenv'
 
-if (process.env.NODE_ENV === 'development') {
-  dotenv.config({ path: process.env.PWD + '/.env.development.local' })
+switch (process.env.NODE_ENV) {
+  case 'development.local':
+    dotenv.config({ path: `${process.env.PWD}/.env.development.local` })
+    break
+  case 'development':
+    dotenv.config({ path: `${process.env.PWD}/.env.development` })
+    break
 }
 
 const config = {
-  value1: 'value1',
+  VALUE: process.env.VALUE,
 } as const
 
 type ConfigKeys = keyof typeof config
